@@ -1,3 +1,6 @@
+// Components
+import Header from "@/components/Header";
+
 // Styles
 import "@/global/globals.css";
 
