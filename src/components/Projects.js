@@ -74,7 +74,7 @@ export default function Projects() {
         <span className="font-mono">02.</span>
         <span className="font-bold">Projetos</span>
       </h2>
-      <ul className="grid grid-cols-fillthree gap-4">
+      <ul className="grid grid-cols-fill gap-4">
         {projects.map((project) => (
           <li key={project.title} className="bg-zinc-100 p-5 rounded-lg">
             <header className="flex justify-between gap-4 items-center">
@@ -102,7 +102,7 @@ export default function Projects() {
               <p>{project.description}</p>
             </div>
             <footer>
-              <ul className="flex flex-wrap gap-4">
+              <ul className="flex flex-wrap gap-x-4">
                 {project.techList.map((tech) => (
                   <li key={`${project.title}${tech}`}>{tech}</li>
                 ))}
