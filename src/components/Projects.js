@@ -74,7 +74,7 @@ export default function Projects() {
         <span className="font-mono">02.</span>
         <span className="font-bold">Projetos</span>
       </h2>
-      <ul className="grid grid-cols-autofill gap-4">
+      <ul className="grid grid-cols-fillthree gap-4">
         {projects.map((project) => (
           <li key={project.title} className="bg-zinc-100 p-5 rounded-lg">
             <header className="flex justify-between gap-4 items-center">
