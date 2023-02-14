@@ -70,13 +70,17 @@ const projects = [
 export default function Projects() {
   return (
     <section>
+      <h2 className="text-xl">
+        <span className="font-mono">02.</span>
+        <span className="font-bold">Projetos</span>
+      </h2>
       <ul className="grid grid-cols-autofill gap-4">
         {projects.map((project) => (
-          <li className="bg-zinc-100 p-5 rounded-lg">
+          <li key={project.title} className="bg-zinc-100 p-5 rounded-lg">
             <header className="flex justify-between gap-4 items-center">
               <div className="flex items-center gap-2">
                 <FiClock />
-                <time datetime="2023-02-10 20:00">4 days ago</time>
+                <time dateTime="2023-02-10 20:00">4 days ago</time>
               </div>
               <div className="flex gap-4 items-center">
                 {project?.repoURL && (
@@ -100,7 +104,7 @@ export default function Projects() {
             <footer>
               <ul className="flex flex-wrap gap-4">
                 {project.techList.map((tech) => (
-                  <li>{tech}</li>
+                  <li key={`${project.title}${tech}`}>{tech}</li>
                 ))}
               </ul>
             </footer>
