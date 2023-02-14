@@ -44,7 +44,7 @@ export default function Articles() {
         <span className="font-mono">03.</span>
         <span className="font-bold">Artigos</span>
       </h2>
-      <ul className="grid grid-cols-filltwo gap-4">
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {articles.map((article) => (
           <li key={article.title} className="bg-zinc-100 p-5 rounded-lg">
             <header className="flex gap-2 items-center">
