@@ -11,8 +11,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        fillthree: "repeat(auto-fill, minmax(250px, 1fr))",
-        filltwo: "repeat(auto-fill, minmax(350px, 1fr))",
+        fill: "repeat(auto-fill, minmax(250px, 1fr))",
       },
     },
   },
