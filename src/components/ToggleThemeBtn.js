@@ -2,8 +2,8 @@
 import { useState } from "react";
 
 // Icons
-import SunIcon from "@/icons/SunIcon";
-import MoonIcon from "@/icons/MoonIcon";
+import SunIcon from "src/icons/SunIcon";
+import MoonIcon from "src/icons/MoonIcon";
 
 export default function ToggleThemeBtn() {
   const [isDarkMode, setDarkMode] = useState(false);
