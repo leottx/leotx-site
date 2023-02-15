@@ -1,19 +1,23 @@
-import React from "react";
-
 // Components
 import ToggleThemeBtn from "./ToggleThemeBtn";
 import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center pt-8">
-      <Link href="/">leotx</Link>
+    <header className="flex justify-between items-cente">
+      <Link className="flex items-center font-bold" href="/">
+        leotx
+      </Link>
       <nav>
-        <ul className="flex items-center gap-4">
+        <ul className="flex items-center">
           <li>
-            <button>Menu</button>
+            <button className="flex gap-1 items-center px-3 py-2 rounded-lg text-base duration-200 transition-colors medium hover:bg-teal-100/60">
+              Menu
+              <FaChevronDown size={10} />
+            </button>
           </li>
-          <li className="h-5 border-c">
+          <li className="border-c">
             <ToggleThemeBtn />
           </li>
         </ul>

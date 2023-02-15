@@ -8,7 +8,7 @@ export default function SunIcon(props) {
         width={props?.size}
         height={props?.size}
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
