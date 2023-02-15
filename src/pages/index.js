@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
 import Articles from "@/components/Articles";
+import ContactMe from "@/components/ContactMe";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutMe />
       <Projects />
       <Articles />
+      <ContactMe />
     </>
   );
 }
