@@ -3,7 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // Styles
-import "@/global/globals.css";
+import "@/styles/fonts.css";
+import "@/styles/main.css";
 
 export default function App({ Component, pageProps }) {
   return (
