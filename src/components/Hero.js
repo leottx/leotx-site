@@ -45,14 +45,18 @@ const socialLinks = [
 export default function Hero() {
   return (
     <section>
-      <h1 className="text-2xl font-bold">
-        Olá, pessoa! Me chamo Leonardo Teixeira <Emoji symbol={"👋"} />
+      <h1 className="mt-12 mb-10">
+        <p className="text-base text-zinc-700">Oi, meu nome é</p>
+        <p className="text-3xl font-bold text-zinc-900">
+          Leonardo Teixeira <Emoji symbol={"👋"} />
+        </p>
+        <p className="text-lg text-zinc-400">Desenvolvedor Frontend</p>
       </h1>
-      <p>
+      <p className="text-zinc-600 text-base">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit
         quia dolor eum ducimus, magnam unde doloremque necessitatibus aliquid.
       </p>
-      <ul className="flex flex-wrap gap-x-3 gap-y-1">
+      <ul className="flex flex-wrap gap-x-3 gap-y-1 mt-8">
         {socialLinks.map((link) => {
           const { name, url, classes, icon } = link;
           return (
