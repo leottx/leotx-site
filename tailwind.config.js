@@ -19,6 +19,14 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         mono: ["Fira Code", ...defaultTheme.fontFamily.mono],
       },
+      fontSize: {
+        base: [
+          "1rem",
+          {
+            lineHeight: "1.75rem",
+          },
+        ],
+      },
     },
   },
   plugins: [],
