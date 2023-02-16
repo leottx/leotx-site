@@ -1,7 +1,6 @@
 // Components
 import Link from "next/link";
-
-// Icons
+import SectionTitle from "@/components/SectionTitle";
 import { FiClock, FiArrowRight } from "react-icons/fi";
 
 const articles = [
@@ -40,25 +39,30 @@ const articles = [
 export default function Articles() {
   return (
     <section>
-      <h2 className="text-xl">
-        <span className="font-mono">03.</span>
-        <span className="font-bold">Artigos</span>
-      </h2>
+      <SectionTitle itemNumber="03." itemText="Artigos" />
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {articles.map((article) => (
-          <li key={article.title} className="bg-zinc-100 p-5 rounded-lg">
-            <header className="flex gap-2 items-center">
+          <li
+            key={article.title}
+            className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl"
+          >
+            <header className="flex items-center gap-2 text-zinc-500">
               <FiClock />
-              <time dateTime="2023-02-10 20:00">4 days ago</time>
+              <time
+                className="tracking-wider uppercase text-xs font-medium"
+                dateTime="2023-02-10 20:00"
+              >
+                4 days ago
+              </time>
             </header>
-            <div>
-              <h3>
+            <div className="my-6">
+              <h3 className="font-bold text-lg text-zinc-900 mb-2">
                 <Link href={`/articles/${article.id}`}>{article.title}</Link>
               </h3>
-              <p>{article.description}</p>
+              <p className="text-zinc-700">{article.description}</p>
             </div>
             <footer>
-              <p className="flex gap-1 items-center">
+              <p className="flex gap-1 items-center font-semibold text-sm text-teal-500">
                 Leia o artigo <FiArrowRight />
               </p>
             </footer>
