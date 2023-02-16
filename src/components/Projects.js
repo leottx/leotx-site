@@ -1,5 +1,6 @@
-// Icons
+// Components
 import { FiClock, FiExternalLink, FiGithub } from "react-icons/fi";
+import SectionTitle from "@/components/SectionTitle";
 
 const projects = [
   {
@@ -70,39 +71,41 @@ const projects = [
 export default function Projects() {
   return (
     <section>
-      <h2 className="text-xl">
-        <span className="font-mono">02.</span>
-        <span className="font-bold">Projetos</span>
-      </h2>
+      <SectionTitle itemNumber="02." itemText={"Projetos"} />
       <ul className="grid grid-cols-fill gap-4">
         {projects.map((project) => (
           <li key={project.title} className="bg-zinc-100 p-5 rounded-lg">
-            <header className="flex justify-between gap-4 items-center">
+            <header className="flex justify-between gap-4 items-center text-zinc-500">
               <div className="flex items-center gap-2">
                 <FiClock />
-                <time dateTime="2023-02-10 20:00">4 days ago</time>
+                <time
+                  className="tracking-wider uppercase text-xs font-medium"
+                  dateTime="2023-02-10 20:00"
+                >
+                  4 days ago
+                </time>
               </div>
               <div className="flex gap-4 items-center">
                 {project?.repoURL && (
                   <a href={project.repoURL}>
-                    <FiGithub />
+                    <FiGithub size="18" />
                   </a>
                 )}
                 {project?.liveURL && (
                   <a href={project.liveURL}>
-                    <FiExternalLink />
+                    <FiExternalLink size="18" />
                   </a>
                 )}
               </div>
             </header>
-            <div>
-              <h3>
+            <div className="my-6">
+              <h3 className="font-bold text-lg text-zinc-900 mb-2">
                 <a href={project?.repoURL}>{project.title}</a>
               </h3>
-              <p>{project.description}</p>
+              <p className="text-zinc-700">{project.description}</p>
             </div>
             <footer>
-              <ul className="flex flex-wrap gap-x-4">
+              <ul className="flex flex-wrap gap-x-4 text-zinc-700 text-xs font-mono">
                 {project.techList.map((tech) => (
                   <li key={`${project.title}${tech}`}>{tech}</li>
                 ))}
