@@ -12,7 +12,7 @@ export default function Header() {
       <nav>
         <ul className="flex items-center">
           <li>
-            <button className="flex gap-1 items-center px-3 py-2 rounded-lg text-base duration-200 transition-colors medium hover:bg-teal-100/60">
+            <button className="flex gap-1 items-center px-3 py-2 rounded-lg text-base duration-200 transition-colors medium hover:bg-teal-50">
               Menu
               <FaChevronDown size={10} />
             </button>
