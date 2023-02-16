@@ -70,11 +70,14 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section>
+    <section className="my-16 md:my-20 lg:my-24">
       <SectionTitle itemNumber="02." itemText={"Projetos"} />
       <ul className="grid grid-cols-fill gap-4">
         {projects.map((project) => (
-          <li key={project.title} className="bg-zinc-100 p-5 rounded-lg">
+          <li
+            key={project.title}
+            className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative"
+          >
             <header className="flex justify-between gap-4 items-center text-zinc-500">
               <div className="flex items-center gap-2">
                 <FiClock />
@@ -85,14 +88,14 @@ export default function Projects() {
                   4 days ago
                 </time>
               </div>
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-4 items-center relative z-10">
                 {project?.repoURL && (
-                  <a href={project.repoURL}>
+                  <a href={project.repoURL} target="_blank">
                     <FiGithub size="18" />
                   </a>
                 )}
                 {project?.liveURL && (
-                  <a href={project.liveURL}>
+                  <a href={project.liveURL} target="_blank">
                     <FiExternalLink size="18" />
                   </a>
                 )}
@@ -100,7 +103,13 @@ export default function Projects() {
             </header>
             <div className="my-6">
               <h3 className="font-bold text-lg text-zinc-900 mb-2">
-                <a href={project?.repoURL}>{project.title}</a>
+                <a
+                  href={project?.repoURL}
+                  target="_blank"
+                  className="after:absolute after:content-[''] after:inset-y-0 after:inset-x-0 rounded-xl"
+                >
+                  {project.title}
+                </a>
               </h3>
               <p className="text-zinc-700">{project.description}</p>
             </div>
