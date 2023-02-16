@@ -1,5 +1,6 @@
 // Components
 import { BsFillCircleFill } from "react-icons/bs";
+import Title from "@/components/SectionTitle";
 
 const techList = [
   {
@@ -26,10 +27,7 @@ export default function AboutMe() {
   return (
     <section className="flex flex-col md:flex-row my-16 md:my-20 lg:my-24">
       <div>
-        <h2 className="flex whitespace-nowrap items-center text-xl mb-4 after:content-[''] after:relative after:h-[1px] after:w-full after:bg-zinc-200 after:block after:ml-3">
-          <span className="font-mono text-zinc-500 mr-1">01.</span>
-          <span className="font-bold text-zinc-900">Sobre mim</span>
-        </h2>
+        <Title itemNumber="01." itemText="Sobre mim" />
         <p className="text-base text-zinc-700 mb-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maiores
           inventore architecto veniam id culpa cumque unde, accusantium quisquam
