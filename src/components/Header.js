@@ -12,7 +12,7 @@ export default function Header() {
       >
         leotx
       </Link>
-      <nav className="hidden md:block">
+      <nav className="hidden h-10 md:block">
         <ul className="flex h-full text-sm font-medium text-zinc-600">
           <li>
             <Link
