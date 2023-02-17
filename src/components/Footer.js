@@ -8,17 +8,25 @@ export default function Footer() {
       <div>
         <p className="flex gap-2">
           <Emoji symbol="🌈" />
-          <span>—</span>
-          <span>&copy; {new Date().getFullYear()} | Leonardo Teixeira</span>
+          <span className="text-zinc-400/90 font-medium">—</span>
+          <span className="text-zinc-600 font-medium">
+            &copy;{" "}
+            <time datetime={new Date().getFullYear()}>
+              {new Date().getFullYear()}
+            </time>{" "}
+            <span className="text-zinc-400/90">|</span> Leonardo Teixeira
+          </span>
         </p>
       </div>
       <a
         href="https://github.com/fake/meu-site"
         target="_blank"
-        className="flex gap-2 items-center"
+        className="flex gap-2 items-center text-zinc-600 font-medium"
       >
         <FaGithub />
-        <span>Source code</span>
+        <span className="decoration-2 decoration-zinc-600/30 underline-offset-2 underline">
+          Source code
+        </span>
       </a>
     </footer>
   );
