@@ -48,6 +48,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <div className="hidden md:block">
+        <ToggleThemeBtn />
+      </div>
       <nav className="md:hidden">
         <ul className="flex items-center text-zinc-600">
           <li>
