@@ -21,10 +21,10 @@ export default function Footer() {
       <a
         href="https://github.com/fake/meu-site"
         target="_blank"
-        className="flex gap-2 items-center text-zinc-600 font-medium"
+        className="flex gap-2 group items-center text-zinc-600 font-medium"
       >
         <FaGithub />
-        <span className="decoration-2 decoration-zinc-600/30 underline-offset-2 underline">
+        <span className="decoration-2 decoration-zinc-600/20 transition-colors underline-offset-2 underline group-hover:decoration-zinc-600/40">
           Source code
         </span>
       </a>

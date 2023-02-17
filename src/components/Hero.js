@@ -14,45 +14,45 @@ const socialLinks = [
     name: "Github",
     url: "https://github.com/leotx",
     icon: FaGithub,
-    classes: "bg-zinc-900 text-white",
+    classes: "bg-zinc-900 text-white transition-colors hover:bg-zinc-600",
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/leotx/",
     icon: FaLinkedin,
-    classes: "bg-blue-700 text-white",
+    classes: "bg-blue-700 text-white transition-colors hover:bg-blue-500",
   },
   {
     name: "Instagram",
     url: "https://www.instagram.com/leotx/",
     icon: FaInstagram,
-    classes: "bg-pink-500 text-white",
+    classes: "bg-pink-500 text-white transition-colors hover:bg-pink-400",
   },
   {
     name: "Twitter",
     url: "https://twitter.com/leotx",
     icon: FaTwitter,
-    classes: "bg-blue-500 text-white",
+    classes: "bg-blue-500 text-white transition-colors hover:bg-blue-400",
   },
   {
     name: "Codepen",
     url: "https://codepen.io/leotx",
     icon: FaCodepen,
-    classes: "bg-lime-500 text-white",
+    classes: "bg-lime-500 text-white transition-colors hover:bg-lime-400",
   },
 ];
 
 export default function Hero() {
   return (
     <section>
-      <h1 className="mt-12 mb-10">
+      <h1 className="mb-10">
         <p className="text-base text-zinc-700">Oi, meu nome é</p>
         <p className="text-3xl font-bold text-zinc-900">
           Leonardo Teixeira <Emoji symbol={"👋"} />
         </p>
         <p className="text-lg text-zinc-400">Desenvolvedor Frontend</p>
       </h1>
-      <p className="text-zinc-600 text-base">
+      <p className="text-zinc-600 text-base max-w-xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit
         quia dolor eum ducimus, magnam unde doloremque necessitatibus aliquid.
       </p>
