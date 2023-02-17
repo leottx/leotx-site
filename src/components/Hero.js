@@ -52,7 +52,7 @@ export default function Hero() {
         </p>
         <p className="text-lg text-zinc-400">Desenvolvedor Frontend</p>
       </h1>
-      <p className="text-zinc-600 text-base">
+      <p className="text-zinc-600 text-base max-w-xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit
         quia dolor eum ducimus, magnam unde doloremque necessitatibus aliquid.
       </p>
