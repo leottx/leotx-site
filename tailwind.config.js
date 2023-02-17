@@ -27,6 +27,9 @@ module.exports = {
           },
         ],
       },
+      backgroundImage: {
+        "waves-texture": "url(/images/waves-texture.svg)",
+      },
     },
   },
   plugins: [],
