@@ -45,7 +45,7 @@ const socialLinks = [
 export default function Hero() {
   return (
     <section>
-      <h1 className="mt-12 mb-10">
+      <h1 className="mb-10">
         <p className="text-base text-zinc-700">Oi, meu nome é</p>
         <p className="text-3xl font-bold text-zinc-900">
           Leonardo Teixeira <Emoji symbol={"👋"} />
