@@ -30,6 +30,9 @@ module.exports = {
       backgroundImage: {
         "waves-texture": "url(/images/waves-texture.svg)",
       },
+      width: {
+        "7/10": "70%",
+      },
     },
   },
   plugins: [],
