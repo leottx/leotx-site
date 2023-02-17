@@ -72,7 +72,7 @@ export default function Projects() {
   return (
     <section className="my-16 md:my-20 lg:my-24">
       <SectionTitle itemNumber="02." itemText={"Projetos"} />
-      <ul className="grid grid-cols-fill gap-4">
+      <ul className="grid grid-cols-fill gap-5 sm:gap-6">
         {projects.map((project) => (
           <li
             key={project.title}
@@ -106,7 +106,7 @@ export default function Projects() {
                 <a
                   href={project?.repoURL}
                   target="_blank"
-                  className="after:absolute after:content-[''] after:inset-y-0 after:inset-x-0 rounded-xl"
+                  className="after:absolute after:content-[''] after:inset-y-0 after:inset-x-0 after:rounded-xl"
                 >
                   {project.title}
                 </a>

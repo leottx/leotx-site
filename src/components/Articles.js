@@ -40,11 +40,11 @@ export default function Articles() {
   return (
     <section>
       <SectionTitle itemNumber="03." itemText="Artigos" />
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
         {articles.map((article) => (
           <li
             key={article.title}
-            className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl"
+            className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative"
           >
             <header className="flex items-center gap-2 text-zinc-500">
               <FiClock />
@@ -57,7 +57,12 @@ export default function Articles() {
             </header>
             <div className="my-6">
               <h3 className="font-bold text-lg text-zinc-900 mb-2">
-                <Link href={`/articles/${article.id}`}>{article.title}</Link>
+                <Link
+                  href={`/articles/${article.id}`}
+                  className="after:absolute after:content-[''] after:inset-y-0 after:inset-x-0 after:rounded-xl"
+                >
+                  {article.title}
+                </Link>
               </h3>
               <p className="text-zinc-700">{article.description}</p>
             </div>
