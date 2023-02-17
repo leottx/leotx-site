@@ -14,31 +14,31 @@ const socialLinks = [
     name: "Github",
     url: "https://github.com/leotx",
     icon: FaGithub,
-    classes: "bg-zinc-900 text-white",
+    classes: "bg-zinc-900 text-white transition-colors hover:bg-zinc-600",
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/leotx/",
     icon: FaLinkedin,
-    classes: "bg-blue-700 text-white",
+    classes: "bg-blue-700 text-white transition-colors hover:bg-blue-500",
   },
   {
     name: "Instagram",
     url: "https://www.instagram.com/leotx/",
     icon: FaInstagram,
-    classes: "bg-pink-500 text-white",
+    classes: "bg-pink-500 text-white transition-colors hover:bg-pink-400",
   },
   {
     name: "Twitter",
     url: "https://twitter.com/leotx",
     icon: FaTwitter,
-    classes: "bg-blue-500 text-white",
+    classes: "bg-blue-500 text-white transition-colors hover:bg-blue-400",
   },
   {
     name: "Codepen",
     url: "https://codepen.io/leotx",
     icon: FaCodepen,
-    classes: "bg-lime-500 text-white",
+    classes: "bg-lime-500 text-white transition-colors hover:bg-lime-400",
   },
 ];
 
