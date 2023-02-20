@@ -11,7 +11,7 @@ export default function Footer() {
           <span className="text-zinc-400/90 font-medium">—</span>
           <span className="text-zinc-600 font-medium">
             &copy;{" "}
-            <time datetime={new Date().getFullYear()}>
+            <time dateTime={new Date().getFullYear()}>
               {new Date().getFullYear()}
             </time>{" "}
             <span className="text-zinc-400/90">|</span> Leonardo Teixeira

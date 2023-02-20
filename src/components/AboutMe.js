@@ -57,11 +57,11 @@ export default function AboutMe() {
           </ul>
         </div>
         <div className="block justify-start w-7/10 max-w-[300px] justify-self-center md:justify-self-start md:w-full md:max-w-[380px] md:pl-16 md:pr-4">
-          <figure className="inline-block origin-top-left">
+          <figure className="inline-block z-10 origin-top-left relative after:content-[''] after:h-12 after:-bottom-[42px] after:-left-[32%] after:w-[160%] after:block after:bg-[length:100%_100%] after:absolute after:inset-x-0 after:bg-pic-shadow after:bg-no-repeat after:-z-10">
             <img
-              src="https://via.placeholder.com/350"
+              src="/images/me.png"
               alt="Foto de Leonardo"
-              className="border-8 rounded-2xl border-zinc-500/10 -rotate-6"
+              className="aspect-square border-8 rounded-2xl border-teal-100 from-teal-200/50 bg-gradient-to-br to-teal-400/60 -rotate-6"
             />
           </figure>
         </div>
