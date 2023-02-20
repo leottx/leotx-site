@@ -14,7 +14,8 @@ const socialLinks = [
     name: "Github",
     url: "https://github.com/leotx",
     icon: FaGithub,
-    classes: "bg-zinc-900 text-white transition-colors hover:bg-zinc-600",
+    classes:
+      "bg-zinc-900 text-white transition-colors hover:bg-zinc-600 dark:bg-zinc-600 dark:hover:bg-zinc-500",
   },
   {
     name: "LinkedIn",
@@ -46,13 +47,15 @@ export default function Hero() {
   return (
     <section>
       <h1 className="mb-10">
-        <p className="text-base text-zinc-700">Oi, meu nome é</p>
-        <p className="text-3xl font-bold text-zinc-900">
+        <p className="text-base text-zinc-700 dark:text-zinc-400">
+          Oi, meu nome é
+        </p>
+        <p className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
           Leonardo Teixeira <Emoji symbol={"👋"} />
         </p>
         <p className="text-lg text-zinc-400">Desenvolvedor Frontend</p>
       </h1>
-      <p className="text-zinc-600 text-base max-w-xl">
+      <p className="text-zinc-600 text-base max-w-xl dark:text-zinc-400">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit
         quia dolor eum ducimus, magnam unde doloremque necessitatibus aliquid.
       </p>
