@@ -76,9 +76,9 @@ export default function Projects() {
         {projects.map((project) => (
           <li
             key={project.title}
-            className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative"
+            className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative dark:bg-transparent dark:border-zinc-700 dark:from-zinc-800"
           >
-            <header className="flex justify-between gap-4 items-center text-zinc-500">
+            <header className="flex justify-between gap-4 items-center text-zinc-500 dark:text-zinc-400">
               <div className="flex items-center gap-2">
                 <FiClock />
                 <time
@@ -102,7 +102,7 @@ export default function Projects() {
               </div>
             </header>
             <div className="my-6">
-              <h3 className="font-bold text-lg text-zinc-900 mb-2">
+              <h3 className="font-bold text-lg text-zinc-900 mb-2 dark:text-zinc-200">
                 <a
                   href={project?.repoURL}
                   target="_blank"
@@ -111,10 +111,12 @@ export default function Projects() {
                   {project.title}
                 </a>
               </h3>
-              <p className="text-zinc-700">{project.description}</p>
+              <p className="text-zinc-700 dark:text-zinc-400">
+                {project.description}
+              </p>
             </div>
             <footer>
-              <ul className="flex flex-wrap gap-x-4 text-zinc-700 text-xs font-mono">
+              <ul className="flex flex-wrap gap-x-4 text-zinc-700 text-xs font-mono dark:text-zinc-500">
                 {project.techList.map((tech) => (
                   <li key={`${project.title}${tech}`}>{tech}</li>
                 ))}
