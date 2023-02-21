@@ -78,7 +78,7 @@ export default function Projects() {
             key={project.title}
             className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative dark:bg-transparent dark:border-zinc-700 dark:from-zinc-800"
           >
-            <header className="flex justify-between gap-4 items-center text-zinc-500 dark:text-zinc-400">
+            <header className="flex justify-between gap-4 items-center text-zinc-500 dark:text-zinc-500">
               <div className="flex items-center gap-2">
                 <FiClock />
                 <time
