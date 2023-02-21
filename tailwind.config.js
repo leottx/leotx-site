@@ -28,12 +28,15 @@ module.exports = {
         ],
       },
       backgroundImage: {
-        "waves-texture": "url(/images/waves-texture.svg)",
+        "waves-light": "url(/images/waves-texture-light.svg)",
+        "waves-dark": "url(/images/waves-texture-dark.svg)",
+        "pic-shadow": "url(/images/shadow.png)",
       },
       width: {
         "7/10": "70%",
       },
     },
   },
+  darkMode: "class",
   plugins: [],
 };
