@@ -29,27 +29,27 @@ export default function AboutMe() {
       <Title itemNumber="01." itemText="Sobre mim" />
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div>
-          <p className="text-base text-zinc-700 mb-4">
+          <p className="text-base text-zinc-700 mb-4 dark:text-zinc-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             maiores inventore architecto veniam id culpa cumque unde,
             accusantium quisquam ex veritatis corrupti odit deleniti similique
             dolor earum excepturi suscipit adipisci.
           </p>
-          <p className="text-base text-zinc-700 mb-4">
+          <p className="text-base text-zinc-700 mb-4 dark:text-zinc-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             maiores inventore architecto veniam id culpa cumque unde,
             accusantium quisquam ex veritatis.
           </p>
-          <p className="text-base text-zinc-700">
+          <p className="text-base text-zinc-700 dark:text-zinc-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             maiores inventore architecto:
           </p>
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-zinc-700 text-sm mt-5 mb-14 md:mb-0">
+          <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-zinc-700 text-sm mt-5 mb-14 md:mb-0 dark:text-zinc-500">
             {techList.map((tech) => (
               <li key={tech.name} className="flex gap-x-2">
                 <BsFillCircleFill
                   size={5}
-                  className="h-6 self-start text-zinc-900"
+                  className="h-6 self-start text-zinc-900 dark:text-zinc-400"
                 />
                 <span className="block">{tech.name}</span>
               </li>
@@ -61,7 +61,7 @@ export default function AboutMe() {
             <img
               src="/images/me.png"
               alt="Foto de Leonardo"
-              className="aspect-square border-8 rounded-2xl border-teal-100 from-teal-200/50 bg-gradient-to-br to-teal-400/60 -rotate-6"
+              className="aspect-square border-8 rounded-2xl border-teal-100 from-teal-200/50 bg-gradient-to-br to-teal-400/60 -rotate-6 dark:border-zinc-700 dark:from-zinc-700 dark:bg-gradient-to-br dark:to-zinc-800"
             />
           </figure>
         </div>
