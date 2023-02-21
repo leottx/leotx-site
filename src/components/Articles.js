@@ -44,9 +44,9 @@ export default function Articles() {
         {articles.map((article) => (
           <li
             key={article.title}
-            className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative"
+            className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative dark:bg-transparent dark:border-zinc-700 dark:from-zinc-800"
           >
-            <header className="flex items-center gap-2 text-zinc-500">
+            <header className="flex items-center gap-2 text-zinc-500 dark:text-zinc-500">
               <FiClock />
               <time
                 className="tracking-wider uppercase text-xs font-medium"
@@ -56,7 +56,7 @@ export default function Articles() {
               </time>
             </header>
             <div className="my-6">
-              <h3 className="font-bold text-lg text-zinc-900 mb-2">
+              <h3 className="font-bold text-lg text-zinc-900 mb-2 dark:text-zinc-200">
                 <Link
                   href={`/articles/${article.id}`}
                   className="after:absolute after:content-[''] after:inset-y-0 after:inset-x-0 after:rounded-xl"
@@ -64,7 +64,9 @@ export default function Articles() {
                   {article.title}
                 </Link>
               </h3>
-              <p className="text-zinc-700">{article.description}</p>
+              <p className="text-zinc-700 dark:text-zinc-400">
+                {article.description}
+              </p>
             </div>
             <footer>
               <p className="flex gap-1 items-center font-semibold text-sm text-teal-500">
