@@ -1,9 +1,14 @@
+import { useState } from "react";
+
 // Components
 import ToggleThemeBtn from "./ToggleThemeBtn";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   return (
     <header className="flex justify-between items-center mb-12 md:mb-16">
       <Link
@@ -16,7 +21,7 @@ export default function Header() {
         <ul className="flex h-full text-sm font-medium text-zinc-600 dark:text-zinc-200">
           <li>
             <Link
-              href="#"
+              href="/#about"
               className="flex items-center px-3 py-2 h-full rounded-lg duration-200 transition-colors hover:bg-teal-100/50 hover:text-teal-700 dark:hover:text-zinc-200 dark:hover:bg-zinc-500/40"
             >
               Sobre mim
@@ -24,7 +29,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="#"
+              href="/#projects"
               className="flex items-center px-3 py-2 h-full rounded-lg duration-200 transition-colors hover:bg-teal-100/50 hover:text-teal-700 dark:hover:text-zinc-200 dark:hover:bg-zinc-500/40"
             >
               Projetos
@@ -32,15 +37,15 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="#"
+              href="/blog"
               className="flex items-center px-3 py-2 h-full rounded-lg duration-200 transition-colors hover:bg-teal-100/50 hover:text-teal-700 dark:hover:text-zinc-200 dark:hover:bg-zinc-500/40"
             >
-              Artigos
+              Blog
             </Link>
           </li>
           <li>
             <Link
-              href="#"
+              href="/#contact"
               className="flex items-center px-3 py-2 h-full rounded-lg duration-200 transition-colors hover:bg-teal-100/50 hover:text-teal-700 dark:hover:text-zinc-200 dark:hover:bg-zinc-500/40"
             >
               Contato
@@ -51,19 +56,26 @@ export default function Header() {
       <div className="hidden md:block">
         <ToggleThemeBtn />
       </div>
-      <nav className="md:hidden">
-        <ul className="flex items-center text-zinc-600">
-          <li>
-            <button className="flex h-10 gap-1 items-center px-3 py-2 rounded-lg text-base transition-colors font-medium hover:bg-teal-100/50 hover:text-teal-700 dark:text-zinc-200 dark:hover:bg-zinc-500/40">
+      <div className="md:hidden">
+        <div className="flex items-center text-zinc-600">
+          <div>
+            <button
+              className="flex h-10 gap-1 items-center px-3 py-2 rounded-lg text-base transition-colors font-medium hover:bg-teal-100/50 hover:text-teal-700 dark:text-zinc-200 dark:hover:bg-zinc-500/40"
+              onClick={() => setShowMobileMenu(true)}
+            >
               Menu
               <FaChevronDown size={10} />
             </button>
-          </li>
-          <li>
+            <MobileMenu
+              showMenu={showMobileMenu}
+              closeMenu={() => setShowMobileMenu(false)}
+            />
+          </div>
+          <div>
             <ToggleThemeBtn />
-          </li>
-        </ul>
-      </nav>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }

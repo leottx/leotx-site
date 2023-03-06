@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-center sm:justify-between gap-y-2 gap-x-8 flex-wrap">
+    <footer className="flex justify-center sm:justify-between gap-y-2 gap-x-8 flex-wrap absolute bottom-5 inset-x-5 sm:inset-x-8 lg:inset-x-12">
       <div>
         <p className="flex gap-2">
           <Emoji symbol="🌈" />
@@ -22,7 +22,7 @@ export default function Footer() {
         </p>
       </div>
       <a
-        href="https://github.com/fake/meu-site"
+        href="https://github.com/leottx/leotx-site"
         target="_blank"
         className="flex gap-2 group items-center text-zinc-600 font-medium dark:text-zinc-200"
       >

@@ -6,7 +6,9 @@ import Projects from "@/components/Projects";
 import Articles from "@/components/Articles";
 import ContactMe from "@/components/ContactMe";
 
-export default function Home() {
+import { getAllFilesFrontMatter } from "@/lib/mdx";
+
+export default function Home({ postsFrontmatter }) {
   return (
     <>
       <Head>
@@ -15,8 +17,14 @@ export default function Home() {
       <Hero />
       <AboutMe />
       <Projects />
-      <Articles />
+      <Articles postsFrontmatter={postsFrontmatter} />
       <ContactMe />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const postsFrontmatter = await getAllFilesFrontMatter();
+
+  return { props: { postsFrontmatter } };
 }
