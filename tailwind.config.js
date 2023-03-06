@@ -1,4 +1,4 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -16,8 +16,8 @@ module.exports = {
         fill: "repeat(auto-fill, minmax(250px, 1fr))",
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        mono: ["Fira Code", ...defaultTheme.fontFamily.mono],
+        sans: ["Inter", ...fontFamily.sans],
+        mono: ["Fira Code", ...fontFamily.mono],
       },
       fontSize: {
         base: [
@@ -38,5 +38,5 @@ module.exports = {
     },
   },
   darkMode: "class",
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
