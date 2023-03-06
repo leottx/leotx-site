@@ -1,6 +1,9 @@
 export default function ContactMe() {
   return (
-    <section className="flex justify-center my-16 md:my-20 lg:my-24">
+    <section
+      className="flex justify-center mt-16 md:mt-20 lg:mt-24"
+      id="contact"
+    >
       <div className="max-w-[600px]">
         <h2 className="text-sm font-mono text-center mb-1">
           <span className="text-zinc-500">04.</span>

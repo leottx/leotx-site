@@ -56,8 +56,9 @@ export default function Hero() {
         <p className="text-lg text-zinc-400">Desenvolvedor Frontend</p>
       </h1>
       <p className="text-zinc-600 text-base max-w-xl dark:text-zinc-400">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit
-        quia dolor eum ducimus, magnam unde doloremque necessitatibus aliquid.
+        Gosto tanto de criar aplicações bonitas e divertidas que decidi fazer
+        disso minha profissão. No momento estou aberto a novas oportunidades.
+        Sinta-se à vontade para conhecer meu trabalho e entrar em contato.
       </p>
       <ul className="flex flex-wrap gap-x-3 gap-y-1 mt-8">
         {socialLinks.map((link) => {

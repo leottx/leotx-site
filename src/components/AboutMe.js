@@ -25,24 +25,24 @@ const techList = [
 
 export default function AboutMe() {
   return (
-    <section className=" mt-16 mb-20 md:my-20 lg:my-24">
+    <section className="mt-16 mb-20 md:my-20 lg:my-24" id="about">
       <Title itemNumber="01." itemText="Sobre mim" />
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div>
           <p className="text-base text-zinc-700 mb-4 dark:text-zinc-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            maiores inventore architecto veniam id culpa cumque unde,
-            accusantium quisquam ex veritatis corrupti odit deleniti similique
-            dolor earum excepturi suscipit adipisci.
+            Meu interesse por programação (particularmente pela área de web)
+            começou no último semestre da faculdade através de uma disciplina de
+            introdução ao HTML e CSS.
           </p>
           <p className="text-base text-zinc-700 mb-4 dark:text-zinc-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            maiores inventore architecto veniam id culpa cumque unde,
-            accusantium quisquam ex veritatis.
+            Desenvolvi um enorme gosto por essa área da programação e pela
+            comunidade que a integra. A ligação foi tão forte que decidi fazer
+            deste novo interesse minha profissão.
           </p>
           <p className="text-base text-zinc-700 dark:text-zinc-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            maiores inventore architecto:
+            Já desenvolvi inúmeros projetos e mais recentemente atuei como
+            Desenvolvedor Front-end em um agência focada em e-commerce (veja
+            mais detalhes no meu currículo).
           </p>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-zinc-700 text-sm mt-5 mb-14 md:mb-0 dark:text-zinc-500">
             {techList.map((tech) => (
