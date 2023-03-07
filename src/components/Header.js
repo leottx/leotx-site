@@ -21,14 +21,6 @@ export default function Header() {
         <ul className="flex h-full text-sm font-medium text-zinc-600 dark:text-zinc-200">
           <li>
             <Link
-              href="/#about"
-              className="flex items-center px-3 py-2 h-full rounded-lg duration-200 transition-colors hover:bg-teal-100/50 hover:text-teal-700 dark:hover:text-zinc-200 dark:hover:bg-zinc-500/40"
-            >
-              Sobre mim
-            </Link>
-          </li>
-          <li>
-            <Link
               href="/#projects"
               className="flex items-center px-3 py-2 h-full rounded-lg duration-200 transition-colors hover:bg-teal-100/50 hover:text-teal-700 dark:hover:text-zinc-200 dark:hover:bg-zinc-500/40"
             >
@@ -50,6 +42,15 @@ export default function Header() {
             >
               Contato
             </Link>
+          </li>
+          <li>
+            <a
+              className="flex items-center px-3 py-2 h-full rounded-lg duration-200 transition-colors hover:bg-teal-100/50 hover:text-teal-700 dark:hover:text-zinc-200 dark:hover:bg-zinc-500/40"
+              href="/docs/leonardo-teixeira-curriculo.pdf"
+              target="_blank"
+            >
+              Currículo
+            </a>
           </li>
         </ul>
       </nav>

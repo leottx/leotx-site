@@ -12,7 +12,7 @@ import SocialLink from "./SocialLink";
 const socialLinks = [
   {
     name: "Github",
-    url: "https://github.com/leotx",
+    url: "https://github.com/leottx/",
     icon: FaGithub,
     classes:
       "bg-zinc-900 text-white transition-colors hover:bg-zinc-600 dark:bg-zinc-600 dark:hover:bg-zinc-500",
@@ -25,19 +25,19 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/leotx/",
+    url: "https://www.instagram.com/heyleotx/",
     icon: FaInstagram,
     classes: "bg-pink-500 text-white transition-colors hover:bg-pink-400",
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/leotx",
+    url: "https://twitter.com/tadeuleotx/",
     icon: FaTwitter,
     classes: "bg-blue-500 text-white transition-colors hover:bg-blue-400",
   },
   {
     name: "Codepen",
-    url: "https://codepen.io/leotx",
+    url: "https://codepen.io/ltteixeira",
     icon: FaCodepen,
     classes: "bg-lime-500 text-white transition-colors hover:bg-lime-400",
   },
