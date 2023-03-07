@@ -31,7 +31,7 @@ export default function AboutMe() {
         <div>
           <p className="text-base text-zinc-700 mb-4 dark:text-zinc-400">
             Meu interesse por programação (particularmente pela área de web)
-            começou no último semestre da faculdade através de uma disciplina de
+            começou no último semestre da faculdade através da disciplina de
             introdução ao HTML e CSS.
           </p>
           <p className="text-base text-zinc-700 mb-4 dark:text-zinc-400">
@@ -41,8 +41,16 @@ export default function AboutMe() {
           </p>
           <p className="text-base text-zinc-700 dark:text-zinc-400">
             Já desenvolvi inúmeros projetos e mais recentemente atuei como
-            Desenvolvedor Front-end em um agência focada em e-commerce (veja
-            mais detalhes no meu currículo).
+            Desenvolvedor Front-end em um agência focada em e-commerce veja mais
+            detalhes no{" "}
+            <a
+              href="/docs/leonardo-teixeira-curriculo.pdf"
+              target="_blank"
+              className="decoration-2 decoration-zinc-600/20 transition-colors underline-offset-2 underline hover:decoration-zinc-600/40 dark:decoration-zinc-600/80 dark:hover:decoration-zinc-500"
+            >
+              meu currículo
+            </a>
+            .
           </p>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-zinc-700 text-sm mt-5 mb-14 md:mb-0 dark:text-zinc-500">
             {techList.map((tech) => (

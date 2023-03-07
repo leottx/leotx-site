@@ -3,23 +3,23 @@ title: "Desenhando com CSS: Bandeira Japonesa com Apenas Um Elemento HTML"
 author: "Leonardo Teixeira"
 description: "Exercite conceitos fundamentais do CSS como position, grid e pseudo-elements com um desafio passo a passo."
 publishedAt: "2023-03-06T19:00"
-topic: "React"
+topic: "CSS"
 id: "1"
 ---
 
 A bandeira Japonesa, também conhecida como "Nisshoki" ou "Hinomaru", possui um desenho minimalista e elegante.
-Nesse artigo você aprenderá a desenhá-la utilizando um único elemento HTML.
+Neste artigo você aprenderá a desenhá-la utilizando um único elemento HTML.
 
-Serão usadas as especifições oficiais da bandeira, veja abaixo:
+Serão usadas as especificações oficiais da bandeira, veja abaixo:
 
 - Proporção 2:3
 - Diâmetro do círculo 3/5 da altura
 - Cor do círculo em hexadecimal _#BC002D_
 
 O ponto de partida do desenho será o elemento `<div></div>`. Esse elemento é um container utilizado para agrupar outros elementos HTML.
-Nesse exercício ele será o plano de fundo branco da bandeira Japonesa.
+Neste exercício ele será o plano de fundo branco da bandeira Japonesa.
 
-### Passo 01 - Crie a Estrutura HTML da Bandeira
+## Passo 1: Crie a Estrutura HTML da Bandeira
 
 Crie um novo arquivo HTML no seu editor de código favorito. Neste documento, adicione um elemento `<div></div>` com o ID "flag".
 Esse será o container da bandeira. Se preferir, copie o código abaixo:
@@ -36,7 +36,7 @@ Esse será o container da bandeira. Se preferir, copie o código abaixo:
 </html>
 ```
 
-### Passo 02 - Posicione a Bandeira no Centro e Adicione os Estilos do Fundo
+## Passo 2: Posicione a Bandeira no Centro e Adicione os Estilos do Fundo
 
 ```HTML
 <!DOCTYPE html>
@@ -46,9 +46,11 @@ Esse será o container da bandeira. Se preferir, copie o código abaixo:
   <style>
     :root {
       --b-color: #D1D5DB;
+      --bg-color: #FAFAFA;
     }
 
     body {
+      background-color: var(--bg-color);
       display: grid;
       height: 100vh;
       padding: 1rem;
@@ -56,11 +58,12 @@ Esse será o container da bandeira. Se preferir, copie o código abaixo:
     }
 
     #flag {
-      max-width: 420px;
-      width: 100%;
+      aspect-ratio: 3/2;
       background-color: white;
       border: 1px solid var(--b-color);
-      aspect-ratio: 3/2;
+      max-width: 420px;
+      position: relative;
+      width: 100%;
     }
   </style>
 </head>
@@ -72,9 +75,9 @@ Esse será o container da bandeira. Se preferir, copie o código abaixo:
 
 No código acima repare na utilização da propriedade `aspect-ratio`.
 Ela permite especificar a proporção pela qual a largura e altura de um elemento serão calculados.
-Como está sendo utilizada a proporção oficial da bandeira, o valor escolhido foi 3/2.
+Como optou-se pela utilização da proporção oficial da bandeira, o valor escolhido foi 3/2.
 
-### Passo 02 - Crie o Círculo e o Posicione no Centro da Bandeira
+## Passo 3: Crie o Círculo e o Posicione no Centro da Bandeira
 
 ```HTML
 <!DOCTYPE html>
@@ -85,9 +88,11 @@ Como está sendo utilizada a proporção oficial da bandeira, o valor escolhido 
     :root {
       --b-color: #D1D5DB;
       --j-red: #BC002D;
+      --bg-color: #FAFAFA;
     }
 
     body {
+      background-color: var(--bg-color);
       display: grid;
       height: 100vh;
       padding: 1rem;
@@ -122,17 +127,17 @@ Como está sendo utilizada a proporção oficial da bandeira, o valor escolhido 
 </html>
 ```
 
-No código acima novamente utilizou-se a propriedade `aspect-ratio`.
+No código acima, novamente utilizou-se a propriedade `aspect-ratio`.
 Dessa vez para especificar a proporção do círculo que é 1:1.
 
-**Confira o <a className="decoration-zinc-400 decoration-2 underline-offset-2 dark:text-zinc-400 dark:decoration-zinc-700" href="https://codepen.io/ltteixeira/pen/BaOdrqR">resultado do desafio</a>**
+**Confira o <a className="decoration-zinc-400 decoration-2 underline-offset-2 dark:text-zinc-400 dark:decoration-zinc-700" href="https://codepen.io/ltteixeira/pen/BaOdrqR" target="_blank">resultado do desafio</a>**
 
-### Conclusão
+## Conclusão
 
 Por meio desse projeto foi possível abordar tópicos intermediários do CSS como _pseudo-elements_, _position_, _variables_ e _aspect-ratio_.
-O intuito de restringir as opções (como utilizar apenas um elemento HTML) é justamente forçar a exploração das possibilidades da tecnologia.
+O intuito de restringir as opções (como utilizar apenas um elemento HTML) é justamente forçar a exploração das possibilidades de uma tecnologia.
 Possivelmente a aborgem deste desafio não foi a mais intuitiva, porém favoreceu o exercício de vários tópicos relevantes do CSS.
 
 Gostou do artigo? Me ajude compartilhando nas redes sociais.
 
-Sugestões? Entre em [contato comigo](/#contact). Ficarei feliz com seu feedback.
+Sugestões? Entre em [contato comigo](/#contact). Ficarei feliz com o seu feedback.
