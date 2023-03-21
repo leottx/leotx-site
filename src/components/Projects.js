@@ -10,7 +10,16 @@ const projects = [
     username: "leottx",
     repo: "leotx-site",
     ghPage: false,
-    techList: ["react"],
+    techList: ["react", "tailwind"],
+    id: 1,
+  },
+  {
+    title: "Lingo",
+    description: "Um clone do premiado jogo Wordle, criado por Josh Wardle.",
+    username: "leottx",
+    repo: "lingo",
+    ghPage: false,
+    techList: ["react", "typescript", "tailwind"],
     id: 1,
   },
 ];

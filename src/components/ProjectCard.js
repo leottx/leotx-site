@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
   return (
     <li
       key={project.title}
-      className="bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative dark:bg-transparent dark:border-zinc-700 dark:from-zinc-800"
+      className="flex flex-col bg-white border border-gray-200 p-5 rounded-xl from-teal-50 hover:bg-gradient-to-bl relative dark:bg-transparent dark:border-zinc-700 dark:from-zinc-800"
     >
       <header className="flex justify-between gap-4 items-center text-zinc-500 dark:text-zinc-500">
         <div className="flex items-center gap-2">
@@ -74,7 +74,7 @@ export default function ProjectCard({ project }) {
           {project.description}
         </p>
       </div>
-      <footer>
+      <footer className="mt-auto">
         <ul className="flex flex-wrap gap-x-4 text-zinc-700 text-xs font-mono dark:text-zinc-500">
           {project.techList.map((tech) => (
             <li key={`${project.title}${tech}`}>{tech}</li>
