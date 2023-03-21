@@ -34,7 +34,6 @@ export default function ProjectCard({ project }) {
             className="tracking-wider uppercase text-xs font-medium"
             dateTime={projectLastUpdate}
           >
-            Atualizado{" "}
             {formatDistanceStrict(new Date(projectLastUpdate), new Date(), {
               addSuffix: true,
               locale: pt,
@@ -47,11 +46,8 @@ export default function ProjectCard({ project }) {
               <FiGithub size="18" />
             </a>
           )}
-          {project?.ghPage && (
-            <a
-              href={`https://leottx.github.io/${project.repo}/`}
-              target="_blank"
-            >
+          {project?.site && (
+            <a href={project.site} target="_blank">
               <FiExternalLink size="18" />
             </a>
           )}
