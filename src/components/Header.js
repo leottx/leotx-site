@@ -46,7 +46,7 @@ export default function Header() {
           <li>
             <a
               className="flex items-center px-3 py-2 h-full rounded-lg duration-200 transition-colors hover:bg-teal-100/50 hover:text-teal-700 dark:hover:text-zinc-200 dark:hover:bg-zinc-500/40"
-              href="/docs/leonardo-teixeira-curriculo.pdf"
+              href="/docs/leonardo-tadeu-teixeira-curriculo.pdf"
               target="_blank"
             >
               Currículo

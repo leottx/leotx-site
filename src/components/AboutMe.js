@@ -44,7 +44,7 @@ export default function AboutMe() {
             Desenvolvedor Front-end em um agência focada em e-commerce veja mais
             detalhes no{" "}
             <a
-              href="/docs/leonardo-teixeira-curriculo.pdf"
+              href="/docs/leonardo-tadeu-teixeira-curriculo.pdf"
               target="_blank"
               className="decoration-2 decoration-zinc-600/20 transition-colors underline-offset-2 underline hover:decoration-zinc-600/40 dark:decoration-zinc-600/80 dark:hover:decoration-zinc-500"
             >
